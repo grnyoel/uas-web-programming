@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background: #141414; /* Warna latar belakang ala Netflix */
+  color: #fff; /* Warna teks putih */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h2 {
+  color: #e50914; /* Warna merah Netflix untuk judul */
+  margin-bottom: 20px;
+}
+
+form {
+  background: #1f1f1f; /* Warna latar belakang form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form input,
+form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #333; /* Warna input */
+  color: #fff; /* Warna teks input */
+  border: none;
+  border-radius: 5px;
+}
+
+form select {
+  cursor: pointer;
+}
+
+form button {
+  padding: 10px;
+  background-color: #e50914; /* Warna merah Netflix untuk tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #bb4fbc; /* Warna ungu Netflix saat tombol dihover */
+}

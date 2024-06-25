@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #1b1a1a;
+}
+
+h1 {
+  color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+}
+
+.navbar > .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar > .navigation > li > a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.active {
+  color: #e50914;
+}
+
+.data-container {
+  margin-left: 220px; /* Memberikan margin agar konten tidak tertutup oleh navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+}
+.data-container > form > input {
+  padding: 5px 10px;
+}
+
+.data-container > form > button {
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #e50914;
+  color: white;
+}
+
+.data-container > div > button.tambah {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #e50914; /* Menggunakan warna merah Netflix untuk tombol Tambah */
+  color: white;
+  margin-top: 20px; /* Memberikan margin atas agar tombol berada di bawah tabel */
+}
+
+.data-container > div > button.tambah > a {
+  padding: 5px 10px;
+  background-color: #e50914; /* Menggunakan warna merah Netflix untuk tautan dalam tombol */
+  color: white;
+  text-decoration: none;
+}
+
+.data-container > button.tambah {
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #e50914;
+}
+
+.data-container > button.tambah > a {
+  text-decoration: none;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table > tbody > tr > td {
+  background-color: #e50914;
+  color: #fff;
+}
+
+table > tbody > tr > th {
+  background-color: #000;
+  color: white;
+}
+
+table > tbody > tr > * {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+table > tbody > tr > td > a {
+  text-decoration: none;
+  color: #000;
+}
